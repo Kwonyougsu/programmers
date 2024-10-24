@@ -3,14 +3,12 @@ using System;
 public class Solution {
     public int solution(int hp) {
         int answer = 0;
-        for(int i = 0; i < hp; i++)
-        {
-            int G = hp / 5;
-            int H = (hp - G*5) / 3 ;
-            int C = (hp - G*5 - H*3) / 1;
-            
-            answer = G+H+C;
-        }
+        
+        int G = hp / 5;
+        int H = (hp - G*5) / 3 ;
+        int C = (hp - G*5 - H*3) / 1;    
+        answer = G+H+C;
+        
         return answer;
     }
 }
